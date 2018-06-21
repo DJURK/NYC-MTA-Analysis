@@ -8,12 +8,12 @@ This project was essentially a giant exercise using pandas.
 ## Strategy
 1. Read in several months of MTA turnstile data from http://www.mta.info/
 2. Find net hourly traffic at each stop on weekdays (entries + exits)
-3. Find stations with most net traffic around breakfast/lunch/dinner times
+3. Find stations with most net traffic around breakfast/lunch/dinner times<br/>
   a. For breakfast and dinner, I used net traffic numbers.  In addition to net traffic at lunch time, however, I also included # of EXITS at BREAKFAST.  The logic behind this is that people who exit at a station around breakfast time are probably working around there, and will be in the area at lunchtime.
-4. Create metrics to estimate sales 
-  a. CONVERSION RATE - Assume 0.2% (1 in 500) people who pass by the food truck will buy a crepe. 
-  b. TRAVEL DOWNTIME - Assume 10 minute per mile travel time
-  c. Sales = Traffic * Conversion Rate * (1 - % time spent travelling)
+4. Create metrics to estimate sales <br/>
+  a. CONVERSION RATE - Assume 0.2% (1 in 500) people who pass by the food truck will buy a crepe. <br/>
+  b. TRAVEL DOWNTIME - Assume 10 minute per mile travel time<br/>
+  c. Sales = Traffic * Conversion Rate * (1 - % time spent travelling)<br/>
 
 ## Top 4 routes:
 Breakfast > Lunch > Dinner
